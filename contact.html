@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="趣味のアクアリウム紹介サイト。タイガーオスカーやポリプテルスなどの魚や水草レイアウト水槽の情報を掲載。">
+	<title>感想・コメント | Myアクアリウム</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!--header領域↓-->
+
+	<header>
+
+		<a href="index.html"><img src="images/title.png" alt="" width="1200" height="400"></a>
+
+		<nav class="nav">
+			<ul class="nav-ul">
+				<li><a href="fish.html">魚の紹介</a></li>
+				<li><a href="aquarium.html">水槽の紹介</a></li>
+				<li><a href="raising.html">飼育メモ</a></li>
+				<li><a href="contact.html">感想・コメント</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<!--header領域↑-->
+
+	<!--main領域↓-->
+
+	<main class="main">
+		<div class="myaqua">
+			<h1>My アクアリウム紹介</h1>
+		</div>
+
+		<nav class="breadcrumb" aria-label="パンくずリスト">
+			<ul>
+				<li><a href="index.html">ホーム</a></li>
+				<li>感想・コメント</li>
+			</ul>
+		</nav>
+
+		<div class="form">
+			<label for="message">感想・コメントは<span class="form-span">こちら</span>へどうぞ</label><br>
+			<textarea name="message" id="message" rows="15" cols="80" placeholder="例：クラウンローチがかわちぃです！"></textarea><br>
+			<button type="submit" class="submit-btn">送信</button>
+		</div>
+
+	</main>
+
+
+	<!--main領域↑-->
+	<hr>
+	<!--footer領域↓-->
+
+	<footer class="footer">
+		<p>制作：Nekokatu</p>
+		<p>連絡先：●●●-××××-○×○×</p>
+		<small>
+			<p>&copy; 2025 My Aquarium Portfolio. All Rights Reserved.</p>
+		</small>
+
+
+	</footer>
+
+	<!--footer領域↑-->
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const slides = document.querySelectorAll('.hero-slider img');
+			let current = 0;
+			slides[current].classList.add('active');
+
+			setInterval(() => {
+				slides[current].classList.remove('active');
+				current = (current + 1) % slides.length;
+				slides[current].classList.add('active');
+			}, 5000);
+		});
+
+	</script>
+
+</body>
+
+</html>

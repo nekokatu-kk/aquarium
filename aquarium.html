@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="趣味のアクアリウム紹介サイト。タイガーオスカーやポリプテルスなどの魚や水草レイアウト水槽の情報を掲載。">
+	<title>水槽の紹介 | Myアクアリウム</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!--header領域↓-->
+
+	<header>
+
+		<a href="index.html"><img src="images/title.png" alt="" width="1200" height="400"></a>
+
+		<nav class="nav">
+			<ul class="nav-ul">
+				<li><a href="fish.html">魚の紹介</a></li>
+				<li><a href="aquarium.html">水槽の紹介</a></li>
+				<li><a href="raising.html">飼育メモ</a></li>
+				<li><a href="contact.html">感想・コメント</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<!--header領域↑-->
+
+	<!--main領域↓-->
+
+	<main class="main">
+		<div class="myaqua">
+			<h1>水槽の紹介</h1>
+		</div>
+
+		<nav class="breadcrumb" aria-label="パンくずリスト">
+			<ul>
+				<li><a href="index.html">ホーム</a></li>
+				<li>水槽の紹介</li>
+			</ul>
+		</nav>
+
+		<section class="aquarium-section">
+
+			<div class="aquarium-item">
+				<figure>
+					<h2>60cm水槽</h2>
+					<img src="images/aqua1.png" alt="６０センチ水槽" width="900" height="600">
+					<hr>
+					<figcaption>
+						一般的なサイズの水槽。値段も手頃で置きやすい。四角い水槽だけでなく手前角がコーナーになってるオシャレなデザインのもある。初心者にお勧め。
+					</figcaption>
+				</figure>
+			</div>
+
+			<hr>
+
+			<div class="aquarium-item">
+				<figure>
+					<h2>90cm水槽</h2>
+					<img src="images/aqua2.png" alt="９０センチ水槽" width="900" height="600">
+					<hr>
+					<figcaption>
+						やや大き目のサイズ。ややとは何ぞ？充分デカイわ！と思う方もいらっしゃるとは思いますが、アクアリウムやってる人はまぁまぁ大きいサイズの認識なんです・・・。重量もそれなりなので置き場所には注意が必要。特にガラス製はクッソ重たい。<br>
+						そこそこ大きい魚が飼えるという点とレイアウトに拘る方には自由度が高いというメリットもある。お値段はそこそこします。
+					</figcaption>
+				</figure>
+			</div>
+
+			<hr>
+
+			<div class="aquarium-item">
+				<figure>
+					<h2>120cm水槽</h2>
+					<img src="images/aqua3.png" alt="１２０センチ水槽" width="900" height="600">
+					<hr>
+					<figcaption>
+						かなり大きいサイズ。主に大型魚飼育に使われる。稀に小型魚を群れで泳がせたりする強者もいる。<br>
+						このサイズになると、重すぎちゃって持ち上げるのもしんどいのでアクリル製にするのが一般的です。<br>
+						尚このサイズから上のサイズ（120cm～180cm程度）になると床が抜ける場合があるので設置前には良く検討しよう。<br>
+						お値段お高め。
+					</figcaption>
+				</figure>
+			</div>
+
+			<hr>
+
+			<div class="aquarium-item">
+				<figure>
+					<h2>小型水槽</h2>
+					<img src="images/aqua4.png" alt="４５センチ以下の水槽" width="900" height="600">
+					<hr>
+					<figcaption>
+						一般的には45cm以下の水槽を指します。小さな生き物しか飼う事が出来ないのですが、小さい分置き場所にはあまり気を使わなくて良いというメリットがあります。フレームの無い全面ガラス仕様のインテリア水槽が人気。観賞だけでなくインテリアとして楽しむ事ができます。お値段は優しめなのですが、小さいと水温や水質が安定しないという隠れたデメリットもあります。実は玄人向け。
+					</figcaption>
+				</figure>
+			</div>
+			<hr>
+		</section>
+
+	</main>
+
+	<!--main領域↑-->
+
+	<!--footer領域↓-->
+
+	<footer class="footer">
+		<p>制作：Nekokatu</p>
+		<p>連絡先：●●●-××××-○×○×</p>
+		<small>
+			<p>&copy; 2025 My Aquarium Portfolio. All Rights Reserved.</p>
+		</small>
+
+
+	</footer>
+
+	<!--footer領域↑-->
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const slides = document.querySelectorAll('.hero-slider img');
+			let current = 0;
+			slides[current].classList.add('active');
+
+			setInterval(() => {
+				slides[current].classList.remove('active');
+				current = (current + 1) % slides.length;
+				slides[current].classList.add('active');
+			}, 5000);
+		});
+
+	</script>
+
+</body>
+
+</html>
